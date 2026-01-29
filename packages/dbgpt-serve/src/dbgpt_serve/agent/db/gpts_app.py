@@ -169,7 +169,7 @@ class GptsApp(BaseModel):
             published=d.get("published", None),
             param_need=d.get("param_need", None),
             hot_value=d.get("hot_value", None),
-            owner_name=d.get("owner_name", None),
+            owner_name="uniplore",
             owner_avatar_url=d.get("owner_avatar_url", None),
             recommend_questions=d.get("recommend_questions", []),
             admins=d.get("admins", []),

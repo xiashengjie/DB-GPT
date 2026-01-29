@@ -409,7 +409,7 @@ function SideBar() {
   }, []);
 
   useEffect(() => {
-    setLogo(mode === 'dark' ? '/logo_s_latest.png' : '/logo_zh_latest.png');
+    setLogo(mode === 'dark' ? '/uniplore_log.png' : '/uniplore_log.png');
   }, [mode]);
 
   if (!isMenuExpand) {

@@ -57,6 +57,8 @@ RUN if [ "$USE_TSINGHUA_UBUNTU" = "true" ]; then \
 
 # Install Rust toolchain for building lyric-py
 RUN if [ "$INSTALL_RUST" = "true" ]; then \
+        export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static; \
+        export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup; \
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y; \
     fi
 
